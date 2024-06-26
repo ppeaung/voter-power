@@ -5,7 +5,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
 from scipy.stats import t
-from scipy.special import erf
 
 
 # ======================================================================
@@ -15,15 +14,13 @@ from scipy.special import erf
 YEAR = 2024
 DAYS_UNTIL_ELECTION = (datetime(2024,11,5) - datetime.today()).days
 SIGMA = 5
-SENATE_STATES = 'AZ,FL,MD,MI,MT,NV,OH,PA,TX,WI,WV '
+EV_PER_STATE = [9,3,11,6,54,10,7,3,3,30,16,4,4,19,11,6,6,8,8,2,10,11,15,10,6,10,4,2,6,4,14,5,28,16,3,17,7,8,19,4,9,3,11,40,6,3,13,12,4,10,3,1,1,1,1,1]
 
 # ======================================================================
 # HELPER FUNCTIONS
 # ======================================================================
 
-
-# Will this be the same as senate_median?
-def EV_median(polls, bias_pct, num_states, dem_safe):
+def Senate_median(polls, bias_pct, num_states, dem_safe):
     """
     Args:
         - polls: Pandas dataframe containing scraped poll data
@@ -57,21 +54,23 @@ def EV_median(polls, bias_pct, num_states, dem_safe):
     # state_num = polls[:, 5]
 
     # Calculate z-score and convert to probability, assuming normal distribution.
-    #polls.z=(polls.margin+biaspct)./polls.SEM;
-    #polls.prob_Dem_win=(erf(polls.z/sqrt(2))+1)/2;
-    #polls.prob_GOP_win=1-polls.prob_Dem_win;
-    #tateprobs=round(polls.prob_Dem_win*100);
-    
-    # Calculate z-score 
-    polls['z'] = (polls['median margin'] + bias_pct) / polls['SEM']
-    # Convert to probabilities 
- 
-    polls['prob_Dem_win'] = (erf(polls['z']/np.sqrt(2)) + 1)/2
+    polls['z'] = (polls['median_margin'] + bias_pct) / polls['median_std_dev']
+
+    polls['prob_Dem_win'] = t.cdf(polls['z'], df=2)
     polls['prob_GOP_win'] = 1 - polls['prob_Dem_win']
-    
-    state_probs = np.round(polls['prob_DEM_win'] * 100)
-    
-    # Prob in November wasn't included in the original MATLAB script
+
+    # TODO: Ask Sam about Estimated Standard Deviation method (probably using the MLE for std)
+
+    # using ESD, not SEM
+    polls_znov = (polls['median_margin'] + bias_pct) / np.sqrt(polls['SEM'] * polls['SEM'] + 5 * 5)
+    # SEM = ESD / sqrt (N) where N = num of polls
+    # polls_znov = (polls['median_margin'] + bias_pct) / np.sqrt(polls['est_std_dev'] * polls['est_std_dev'] + 5 * 5)
+    polls['prob_Dem_November'] = t.cdf(polls_znov, 2)
+
+    state_probs = np.round(polls['prob_Dem_win'] * 100)
+    state_nov_probs = np.round(polls['prob_Dem_November'] * 100)
+
+    # print(state_nov_probs)
 
     # The meta-magic: store the Electoral Votes (EV) distribution,
     # the exact probability distribution of all possible outcomes
@@ -84,19 +83,6 @@ def EV_median(polls, bias_pct, num_states, dem_safe):
     print("Printing")
     print(EV_distribution)
     print("Done")
-
-    # TODO: I think this is fine so far
-    
-    
-    # Cumulative histogram of all possibilities
-    # histogram=fliplr(EV_distribution(1:538)); %index of 1 for 1 EV...index of 538 for 538 EV
-    # cumulative_prob=cumsum(histogram);
-    # electoralvotes=1:538;
-
-    # Calculate median and confidence bands from cumulative histogram
-    # medianEV(1)=electoralvotes(min(find(cumulative_prob>=0.5)));  % 50-pct outcome
-    
-    
 
     # Cumulative histogram of all possibilities
     histogram = EV_distribution[1:num_states + 1]
@@ -197,9 +183,7 @@ else:
         median_seats, mean_seats) = Senate_median(senate_df, bias_pct, num_states, dem_safe)
     metamargin = -bias_pct
     bias_pct = foo
-    del foo
-
-# TODO: Test voter power calculation
+    del foo 
 
 # ======================================================================
 # LOAD VOTER TURNOUT DATA
