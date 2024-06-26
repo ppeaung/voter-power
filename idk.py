@@ -3,11 +3,11 @@ import pandas as pd
 from scipy.stats import t
 import matplotlib.pyplot as plt
 
-csv_file_path = './Data/voter_turnout_data2022.csv'
+csv_file_path = './data/voter_turnout_data2022.csv'
 df = pd.read_csv(csv_file_path)
 
 # Extract state and turnout numbers
-vote_turnout_df = df[['State','Unnamed: 1']] 
+vote_turnout_df = df[['State','Unnamed: 1']]
 vote_turnout_df =  vote_turnout_df.iloc[1:-1]
 
 # Remove commas 
@@ -21,9 +21,11 @@ vote_turnout_df['State'] = vote_turnout_df['State'].apply(lambda x: x.replace('*
 # vote_turnout_dict = vote_turnout_df.to_dict(orient = "index")
 vote_turnout = vote_turnout_df['Unnamed: 1'].to_numpy()
 
-meta_margin = 
+# meta_margin = 
 sigma = 13 
 
+Alabama_pop = vote_turnout[1]
+# Alabama_margin = 
 
 
 

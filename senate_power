@@ -1,0 +1,124 @@
+import numpy as np
+from scipy.stats import t
+
+# ======================================================================
+# GLOBAL VARIABLES 
+# ======================================================================
+
+YEAR = 2024
+# TODO: Make dynamic 
+DAYS_UNTIL_ELECTION = 134 
+# TODO: Load script that calculates the metamargin 
+META_MARGIN = 0
+# TODO: Make the value of sigma more rigorous/justify the value of it
+SIGMA = 5
+SENATE_STATES = 'AZ,FL,MD,MI,MT,NV,OH,PA,TX,WI,WV '
+
+# ======================================================================
+# LOAD POLL DATA
+# ======================================================================
+
+# Each state takes up 3 spaces
+senate_csv_file_path = f'./outputs/{YEAR}.Senate.polls.median.csv'
+senate_margins_df = pd.read_csv(senate_csv_file_path)
+
+senate_margins = senate_margins_df['median_margin'].to_numpy()
+
+num_states = len(SENATE_STATES) // 3
+if senate_margins.shape[0] % num_states !=0: 
+    raise Exception(f"Warning: {YEAR}.Senate.polls.median.csv is not a multiple of num_states lines long") 
+
+# TODO: Finding desired data from df 
+
+# What is analysisdate?'
+
+# If Analysis_data > 0 and num lines > numstates 
+# Find the start of the entry matching analysis date (the index that is in the data)
+# Find the start of the freshest entry 
+# Assume reverse time order, take whichever of the two was done earlier, also protect against no data for analysisdate 
+
+# If else, do the top and end of the file (?)
+
+#% find the desired data within the file
+#if analysisdate>0 && numlines>num_states
+#    foo=find(polldata(:,2)==analysisdate,1,'first'); % find the start of the entry matching analysisdate
+# %   ind=min([size(polldata,1)-num_states+1 foo']);
+#    foo2=find(polldata(:,2)==max(polldata(:,5)),1,'first'); % find the start of the freshest entry
+#    ind=max([foo2 foo]); %assume reverse time order, take whichever of the two was done earlier, also protect against no data for analysisdate
+#    polldata=polldata(ind:ind+num_states-1,:);
+#    clear foo2 foo ind
+#elseif numlines>num_states
+#%    polldata = polldata(numlines-num_states+1:numlines,:); % end of file
+#    polldata = polldata(1:num_states,:); % top of file
+#end
+
+# % Use statistics from data file
+# polls.margin=polldata(:,4)';
+# polls.SEM=polldata(:,5)';
+# polls.SEM=max(polls.SEM,zeros(1,num_states)+3) % minimum uncertainty of 2%
+# totalpollsused=sum(polldata(:,1))
+
+# ======================================================================
+# LOAD VOTER TURNOUT DATA
+# ======================================================================
+
+# TODO: Change csv file titles to align with variables (Unnamed -> ...)
+
+vote_turnout_csv_file_path = './data/voter_turnout_data2022.csv'
+df = pd.read_csv(vote_turnout_csv_file_path)
+
+# Extract state and turnout numbers
+vote_turnout_df = df[['State','Unnamed: 1']]
+vote_turnout_df =  vote_turnout_df.iloc[2:-1]
+
+# Remove commas 
+vote_turnout_df['Unnamed: 1'] = vote_turnout_df['Unnamed: 1'].apply(lambda x: pd.to_numeric(x.replace(',', ''), errors='coerce'))
+vote_turnout_df['Unnamed: 1'] = pd.to_numeric(vote_turnout_df['Unnamed: 1'])
+
+# Remove * 
+vote_turnout_df['State'] = vote_turnout_df['State'].apply(lambda x: x.replace('*', ''))
+
+# For now, let's just look at the numbers 
+# vote_turnout_dict = vote_turnout_df.to_dict(orient = "index")
+vote_turnout = vote_turnout_df['Unnamed: 1'].to_numpy()
+
+# ======================================================================
+# VOTER POWER CALCULATION
+# ======================================================================
+
+# t-pdf setup 
+df = 3 
+t_dist = t(df)
+
+Z = (senate_margins - META_MARGIN) / SIGMA
+num = t_dist.pdf(Z)
+den = vote_turnout
+
+voter_power = np.divide(num, den)
+
+# ======================================================================
+# SAVE DATA 
+# ======================================================================
+
+# Hard-coded values for sanity check
+# kvoters = np.array([2592, 7797, 2031, 4500, 468, 1024, 4201, 5410, 8152, 2673, 495]) 
+# margins = np.array([3.0, -8.0, 5.0, 3.0, 0.0, 11.0, 8.0, 7.0, -11.0, 8.0, -33.0])
+
+metamarg = 0 
+
+
+
+##### Magic constants #####
+DAYS_UNTIL_ELECTION = 134
+
+
+# No, I think you need to resimulate the Senate median here? Why is that so?
+
+df = 3
+t_dist = t(df)
+x = np.linspace(-5, 5, 100)
+y = t_dist.pdf(x)
+
+plt.plot(x, y)
+plt.axvline(x=0, color='r')
+plt.show()
