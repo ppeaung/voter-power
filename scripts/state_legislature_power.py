@@ -31,7 +31,7 @@ state_fips = {
 """
 
 state_fips = {
-    'AZ': 4, 'WA':53
+    'AZ': 4, 'WA':53, 'ID': 16
 }
 # ======================================================================
 # Helper Functions
@@ -104,5 +104,5 @@ print(df_all)
 
 # Save Data 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-path = os.path.join(dir_path, f'../outputs/{YEAR}.stateLegislature.VoterPowerTest.csv')
+path = os.path.join(dir_path, f'../outputs/{YEAR}.stateLegislature.VoterPower.csv')
 df_all.to_csv(path, index=False, float_format='%.2f')
