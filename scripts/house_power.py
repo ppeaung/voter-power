@@ -7,7 +7,6 @@ from datetime import datetime
 from scipy.stats import t
 from scipy.special import erf
 
-
 # ======================================================================
 # GLOBAL VARIABLES 
 # ======================================================================
@@ -30,7 +29,7 @@ HOUSE_DISTRICTS = 'AZ-1,AZ-4,AZ-6,NC-1,OR-5,MT-1,WI-1,WI-3,OH-1,OH-9,OH-13 '
 ## TODO: Figure out polling data structure for the House and load the appropriate margins for each congressional district
 
 # Each state takes up 5 spaces
-house_csv_file_path = f'./outputs/{YEAR}.house.polls.median.csv'
+house_csv_file_path = f'../outputs/{YEAR}.house.polls.median.csv'
 house_df = pd.read_csv(house_csv_file_path)
 
 #num_states = len(SENATE_STATES) // 5
@@ -140,5 +139,5 @@ df = pd.DataFrame({
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-path = os.path.join(dir_path, f'outputs/{YEAR}.house.VoterPower.csv')
+path = os.path.join(dir_path, f'../outputs/{YEAR}.house.VoterPower.csv')
 df.to_csv(path, index=False, float_format='%.2f')

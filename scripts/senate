@@ -3,6 +3,8 @@ import pandas as pd
 from scipy.stats import t
 from datetime import datetime
 
+# Stephanie started this
+
 # Initialize global variables
 data_file = '../scraping/outputs/2024.Senate.polls.median.csv'
 output_path = 'outputs/'
