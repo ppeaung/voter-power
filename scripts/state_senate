@@ -3,7 +3,6 @@ import os
 import csv 
 import geopandas as gpd
 import matplotlib.pyplot as plt
-import networkx as nx
 import pandas as pd
 import numpy as np
 from scipy.stats import t

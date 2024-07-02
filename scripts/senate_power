@@ -15,7 +15,10 @@ from scipy.special import erf
 YEAR = 2024
 DAYS_UNTIL_ELECTION = (datetime(2024,11,5) - datetime.today()).days
 SIGMA = 5
-SENATE_STATES = 'AZ,FL,MD,MI,MT,NV,OH,PA,TX,WI,WV '
+
+# Old one 
+# SENATE_STATES = 'AZ,FL,MD,MI,MT,NV,OH,PA,TX,WI,WV '
+SENATE_STATES = 'AZ,CA,CT,DE,FL,HI,IN,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NJ,NM,NY,ND,OH,PA,RI,TN,TX,UT,VT,VA,WA,WV,WI,WY '
 
 # ======================================================================
 # HELPER FUNCTIONS
@@ -87,7 +90,6 @@ def EV_median(polls, bias_pct, num_states, dem_safe):
 
     # TODO: I think this is fine so far
     
-    
     # Cumulative histogram of all possibilities
     # histogram=fliplr(EV_distribution(1:538)); %index of 1 for 1 EV...index of 538 for 538 EV
     # cumulative_prob=cumsum(histogram);
@@ -127,7 +129,7 @@ def EV_median(polls, bias_pct, num_states, dem_safe):
 # ======================================================================
 
 # Each state takes up 3 spaces
-senate_csv_file_path = f'./outputs/{YEAR}.Senate.polls.median.csv'
+senate_csv_file_path = f'../outputs/{YEAR}.Senate.polls.median.csv'
 senate_df = pd.read_csv(senate_csv_file_path)
 
 num_states = len(SENATE_STATES) // 3
@@ -204,8 +206,14 @@ else:
 # ======================================================================
 # LOAD VOTER TURNOUT DATA
 # ======================================================================
+# Voter Turnout information
 
-vote_turnout = np.array([2592, 7797, 2031, 4500, 468, 1024, 4201, 5410, 8152, 2673, 495]) 
+'AZ,CA,CT,DE,FL,HI,IN,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NJ,NM,NY,ND,OH,PA,RI,TN,TX,UT,VT,VA,WA,WV,WI,WY '
+vote_turnout = np.array([1424080,267040,2592310,914220,11146610,2540660,1297810,325630,205770,7796910,3964920,423440,595350,4144120,1880750,1230410,1008990,1502550,
+                         1410460,680900,2031630,2511460,4500400,2526640,709100,2304250,468320,682710,1023610,626930,2645530,714750,5962270,3790200,242560,4201360,
+                         1153280,1997680,5410020,361440,1718620,354670,1756390,8151590,1084630,291950,3021950,3067680,494750,2673150,198190])
+# Old one
+# vote_turnout = np.array([2592, 7797, 2031, 4500, 468, 1024, 4201, 5410, 8152, 2673, 495]) 
 
 # TODO: Change csv file titles to align with variables (Unnamed -> ...)
 
@@ -259,8 +267,23 @@ print(f"The voter power is {voter_power}")
 # ======================================================================
 
 # TODO: Get codes from geocodes csv file rather than hardcoding 
-FIPS_Code = np.array([4,12,24,26,30,32,39,42,48,55,54])
-Senate_Seats_List = np.array(['AZ','FL','MD','MI','MT','NV','OH','PA','TX','WI','WV'])
+
+FIPS_Code = np.array([
+    4, 6, 9, 10, 12, 15, 18, 23, 24, 25, 
+    26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 
+    38, 39, 42, 44, 47, 48, 49, 50, 51, 53, 
+    54, 55, 56
+])
+
+State_Seats_List = np.array([
+    "AZ", "CA", "CT", "DE", "FL", "HI", "IN", "ME", "MD", "MA", 
+    "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", 
+    "ND", "OH", "PA", "RI", "TN", "TX", "UT", "VT", "VA", "WA", 
+    "WV", "WI", "WY"
+])
+# Old one 
+# FIPS_Code = np.array([4,12,24,26,30,32,39,42,48,55,54])
+# Senate_Seats_List = np.array(['AZ','FL','MD','MI','MT','NV','OH','PA','TX','WI','WV'])
 
 df = pd.DataFrame({
     'FIPS_CODE' : FIPS_Code, 
