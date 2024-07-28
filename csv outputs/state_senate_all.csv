@@ -1,0 +1,247 @@
+state_name,state,congress,s_upper,s_lower,district_name,race_type,margins,voter_power
+Alaska,2,,A,,State Senate District A,State Leg (Upper),-4.576875905898094,0.0
+Alaska,2,,B,,State Senate District B,State Leg (Upper),23.33515148509942,1.0
+Alaska,2,,C,,State Senate District C,State Leg (Upper),-8.844834159359511,0.0
+Alaska,2,,D,,State Senate District D,State Leg (Upper),-45.80479452054795,0.0
+Alaska,2,,E,,State Senate District E,State Leg (Upper),-6.495363977115802,0.0
+Alaska,2,,F,,State Senate District F,State Leg (Upper),-6.521496370742602,29.0
+Alaska,2,,G,,State Senate District G,State Leg (Upper),8.255745816784946,0.0
+Alaska,2,,H,,State Senate District H,State Leg (Upper),2.2002912150137517,100.0
+Alaska,2,,I,,State Senate District I,State Leg (Upper),18.860178700796908,0.0
+Alaska,2,,J,,State Senate District J,State Leg (Upper),15.587455141207677,4.0
+Alaska,2,,K,,State Senate District K,State Leg (Upper),2.4689692390717757,0.0
+Alaska,2,,L,,State Senate District L,State Leg (Upper),-30.498563807960604,1.0
+Alaska,2,,M,,State Senate District M,State Leg (Upper),-45.89797837329572,0.0
+Alaska,2,,N,,State Senate District N,State Leg (Upper),-51.553804789595446,0.0
+Alaska,2,,O,,State Senate District O,State Leg (Upper),-40.34617532104969,0.0
+Alaska,2,,P,,State Senate District P,State Leg (Upper),-12.547051442910917,6.0
+Alaska,2,,Q,,State Senate District Q,State Leg (Upper),-34.557477711519155,0.0
+Alaska,2,,R,,State Senate District R,State Leg (Upper),-2.7391465284754903,88.0
+Alaska,2,,S,,State Senate District S,State Leg (Upper),23.793310634888844,0.0
+Alaska,2,,T,,State Senate District T,State Leg (Upper),15.03331184182248,4.0
+Arizona,4,,1,,State Senate District 1,State Leg (Upper),-29.137185453646886,1.0
+Arizona,4,,2,,State Senate District 2,State Leg (Upper),-5.0557399464102595,41.0
+Arizona,4,,3,,State Senate District 3,State Leg (Upper),-26.160340750621476,1.0
+Arizona,4,,4,,State Senate District 4,State Leg (Upper),-4.220855191153715,53.0
+Arizona,4,,5,,State Senate District 5,State Leg (Upper),36.3377314558155,0.0
+Arizona,4,,6,,State Senate District 6,State Leg (Upper),31.45778923821173,0.0
+Arizona,4,,7,,State Senate District 7,State Leg (Upper),-24.57647825378726,1.0
+Arizona,4,,8,,State Senate District 8,State Leg (Upper),25.647310053629063,1.0
+Arizona,4,,9,,State Senate District 9,State Leg (Upper),1.797569332905022,100.0
+Arizona,4,,10,,State Senate District 10,State Leg (Upper),-23.75942307299434,1.0
+Arizona,4,,11,,State Senate District 11,State Leg (Upper),51.59374947435703,0.0
+Arizona,4,,12,,State Senate District 12,State Leg (Upper),13.74016130599553,5.0
+Arizona,4,,13,,State Senate District 13,State Leg (Upper),-2.2123763974061794,92.0
+Arizona,4,,14,,State Senate District 14,State Leg (Upper),-18.598823379699876,2.0
+Arizona,4,,15,,State Senate District 15,State Leg (Upper),-28.20770751673662,1.0
+Arizona,4,,16,,State Senate District 16,State Leg (Upper),-5.6500447580432835,34.0
+Arizona,4,,17,,State Senate District 17,State Leg (Upper),-9.143737198926695,13.0
+Arizona,4,,18,,State Senate District 18,State Leg (Upper),18.98137291031525,2.0
+Arizona,4,,19,,State Senate District 19,State Leg (Upper),-23.987769944944436,1.0
+Arizona,4,,20,,State Senate District 20,State Leg (Upper),50.43312657876291,0.0
+Arizona,4,,21,,State Senate District 21,State Leg (Upper),28.119570368030328,1.0
+Arizona,4,,22,,State Senate District 22,State Leg (Upper),35.01707806612909,0.0
+Arizona,4,,23,,State Senate District 23,State Leg (Upper),15.57728433119792,3.0
+Arizona,4,,24,,State Senate District 24,State Leg (Upper),31.544825882934056,0.0
+Arizona,4,,25,,State Senate District 25,State Leg (Upper),-26.361114980813312,1.0
+Arizona,4,,26,,State Senate District 26,State Leg (Upper),37.458950918611876,0.0
+Arizona,4,,27,,State Senate District 27,State Leg (Upper),-10.239186187507379,10.0
+Arizona,4,,28,,State Senate District 28,State Leg (Upper),-26.481400290040806,1.0
+Arizona,4,,29,,State Senate District 29,State Leg (Upper),-14.44646057843376,4.0
+Arizona,4,,30,,State Senate District 30,State Leg (Upper),-50.56426602343211,0.0
+Kansas,20,,1,,State Senate District 1,State Leg (Upper),-44.32336869173899,0.0
+Kansas,20,,2,,State Senate District 2,State Leg (Upper),55.361787262420805,0.0
+Kansas,20,,3,,State Senate District 3,State Leg (Upper),-12.270659034199324,5.0
+Kansas,20,,4,,State Senate District 4,State Leg (Upper),56.28245067497404,0.0
+Kansas,20,,5,,State Senate District 5,State Leg (Upper),-6.608026388125343,22.0
+Kansas,20,,6,,State Senate District 6,State Leg (Upper),28.300575739527496,1.0
+Kansas,20,,7,,State Senate District 7,State Leg (Upper),24.976602714085168,1.0
+Kansas,20,,8,,State Senate District 8,State Leg (Upper),11.612458161935665,6.0
+Kansas,20,,9,,State Senate District 9,State Leg (Upper),-12.380024216650423,5.0
+Kansas,20,,10,,State Senate District 10,State Leg (Upper),-2.974485978897402,65.0
+Kansas,20,,11,,State Senate District 11,State Leg (Upper),-6.72530005763111,22.0
+Kansas,20,,12,,State Senate District 12,State Leg (Upper),-46.701727048435274,0.0
+Kansas,20,,13,,State Senate District 13,State Leg (Upper),-30.915147265077138,0.0
+Kansas,20,,14,,State Senate District 14,State Leg (Upper),-42.93822932521563,0.0
+Kansas,20,,15,,State Senate District 15,State Leg (Upper),-44.67213114754098,0.0
+Kansas,20,,16,,State Senate District 16,State Leg (Upper),-24.10552734488998,1.0
+Kansas,20,,17,,State Senate District 17,State Leg (Upper),-17.7347843611447,2.0
+Kansas,20,,18,,State Senate District 18,State Leg (Upper),-28.735766765213828,1.0
+Kansas,20,,19,,State Senate District 19,State Leg (Upper),28.059701492537314,1.0
+Kansas,20,,20,,State Senate District 20,State Leg (Upper),-7.824826471162155,16.0
+Kansas,20,,21,,State Senate District 21,State Leg (Upper),14.293442669627856,4.0
+Kansas,20,,22,,State Senate District 22,State Leg (Upper),-0.7737906692610526,100.0
+Kansas,20,,23,,State Senate District 23,State Leg (Upper),-7.555338541666666,17.0
+Kansas,20,,24,,State Senate District 24,State Leg (Upper),-35.19625152790982,0.0
+Kansas,20,,25,,State Senate District 25,State Leg (Upper),12.406613004289776,5.0
+Kansas,20,,26,,State Senate District 26,State Leg (Upper),-38.18641138146523,0.0
+Kansas,20,,27,,State Senate District 27,State Leg (Upper),-22.84298127524171,1.0
+Kansas,20,,28,,State Senate District 28,State Leg (Upper),-14.130180832671371,4.0
+Kansas,20,,29,,State Senate District 29,State Leg (Upper),40.936362237833954,0.0
+Kansas,20,,30,,State Senate District 30,State Leg (Upper),-15.821651748015539,3.0
+Kansas,20,,31,,State Senate District 31,State Leg (Upper),-24.631382896166382,1.0
+Kansas,20,,32,,State Senate District 32,State Leg (Upper),-40.898377455166525,0.0
+Kansas,20,,33,,State Senate District 33,State Leg (Upper),-56.75684781510056,0.0
+Kansas,20,,34,,State Senate District 34,State Leg (Upper),-37.69947484330002,0.0
+Kansas,20,,35,,State Senate District 35,State Leg (Upper),-8.80562186519325,12.0
+Kansas,20,,36,,State Senate District 36,State Leg (Upper),-61.78648052458223,0.0
+Kansas,20,,37,,State Senate District 37,State Leg (Upper),-17.98087212413055,2.0
+Kansas,20,,38,,State Senate District 38,State Leg (Upper),-45.48004657563248,0.0
+Kansas,20,,39,,State Senate District 39,State Leg (Upper),-49.86063513822253,0.0
+Kansas,20,,40,,State Senate District 40,State Leg (Upper),-59.2788094632409,0.0
+Nebraska,31,,1,,State Senate District 1,State Leg (Upper),-43.74586764440704,0.0
+Nebraska,31,,2,,State Senate District 2,State Leg (Upper),-28.55190538764783,0.0
+Nebraska,31,,3,,State Senate District 3,State Leg (Upper),-16.45508817676525,5.0
+Nebraska,31,,4,,State Senate District 4,State Leg (Upper),-22.2728965003723,0.0
+Nebraska,31,,5,,State Senate District 5,State Leg (Upper),14.920102410170388,7.0
+Nebraska,31,,6,,State Senate District 6,State Leg (Upper),1.181059107888376,0.0
+Nebraska,31,,7,,State Senate District 7,State Leg (Upper),34.46180555555556,1.0
+Nebraska,31,,8,,State Senate District 8,State Leg (Upper),26.04210149680959,0.0
+Nebraska,31,,9,,State Senate District 9,State Leg (Upper),34.73142016188373,1.0
+Nebraska,31,,10,,State Senate District 10,State Leg (Upper),-3.140136963420745,0.0
+Nebraska,31,,11,,State Senate District 11,State Leg (Upper),69.99889294807926,0.0
+Nebraska,31,,12,,State Senate District 12,State Leg (Upper),-7.38532973583485,0.0
+Nebraska,31,,13,,State Senate District 13,State Leg (Upper),23.56655902404019,2.0
+Nebraska,31,,14,,State Senate District 14,State Leg (Upper),-20.475380139430204,0.0
+Nebraska,31,,15,,State Senate District 15,State Leg (Upper),-36.0699865410498,1.0
+Nebraska,31,,16,,State Senate District 16,State Leg (Upper),-49.43354517822603,0.0
+Nebraska,31,,17,,State Senate District 17,State Leg (Upper),-29.506649506649506,1.0
+Nebraska,31,,18,,State Senate District 18,State Leg (Upper),-8.947336078166288,0.0
+Nebraska,31,,19,,State Senate District 19,State Leg (Upper),-58.46283074338513,0.0
+Nebraska,31,,20,,State Senate District 20,State Leg (Upper),-4.2141506231511565,0.0
+Nebraska,31,,21,,State Senate District 21,State Leg (Upper),-13.55207785376118,9.0
+Nebraska,31,,22,,State Senate District 22,State Leg (Upper),-59.9836333878887,0.0
+Nebraska,31,,23,,State Senate District 23,State Leg (Upper),-47.70807118461262,0.0
+Nebraska,31,,24,,State Senate District 24,State Leg (Upper),-50.67001675041875,0.0
+Nebraska,31,,25,,State Senate District 25,State Leg (Upper),-12.71706061315235,10.0
+Nebraska,31,,26,,State Senate District 26,State Leg (Upper),9.283493132935995,0.0
+Nebraska,31,,27,,State Senate District 27,State Leg (Upper),4.016368596544408,100.0
+Nebraska,31,,28,,State Senate District 28,State Leg (Upper),29.552122041854094,0.0
+Nebraska,31,,29,,State Senate District 29,State Leg (Upper),17.323290845886444,4.0
+Nebraska,31,,30,,State Senate District 30,State Leg (Upper),-21.93933108633653,0.0
+Nebraska,31,,31,,State Senate District 31,State Leg (Upper),-19.432523855202707,3.0
+Nebraska,31,,32,,State Senate District 32,State Leg (Upper),-39.7922232116355,0.0
+Nebraska,31,,33,,State Senate District 33,State Leg (Upper),-49.10343986338132,0.0
+Nebraska,31,,34,,State Senate District 34,State Leg (Upper),-53.65796283227476,0.0
+Nebraska,31,,35,,State Senate District 35,State Leg (Upper),-25.06321112515803,2.0
+Nebraska,31,,36,,State Senate District 36,State Leg (Upper),-31.55843377106194,0.0
+Nebraska,31,,37,,State Senate District 37,State Leg (Upper),-39.155522367795804,0.0
+Nebraska,31,,38,,State Senate District 38,State Leg (Upper),-65.80264942109106,0.0
+Nebraska,31,,39,,State Senate District 39,State Leg (Upper),-35.98615916955018,1.0
+Nebraska,31,,40,,State Senate District 40,State Leg (Upper),-66.78107508712642,0.0
+Nebraska,31,,41,,State Senate District 41,State Leg (Upper),-60.48523922633186,0.0
+Nebraska,31,,42,,State Senate District 42,State Leg (Upper),-57.83614220691352,0.0
+Nebraska,31,,43,,State Senate District 43,State Leg (Upper),-66.7125244721943,0.0
+Nebraska,31,,44,,State Senate District 44,State Leg (Upper),-60.152682162088475,0.0
+Nebraska,31,,45,,State Senate District 45,State Leg (Upper),-16.336332273557463,5.0
+Nebraska,31,,46,,State Senate District 46,State Leg (Upper),20.05497526113249,0.0
+Nebraska,31,,47,,State Senate District 47,State Leg (Upper),-62.93391090557865,0.0
+Nebraska,31,,48,,State Senate District 48,State Leg (Upper),-47.97157444459776,0.0
+Nebraska,31,,49,,State Senate District 49,State Leg (Upper),-21.392289658765304,2.0
+New Hampshire,33,,1,,State Senate District 1,State Leg (Upper),-13.129678332996155,5.0
+New Hampshire,33,,2,,State Senate District 2,State Leg (Upper),-15.96985465637897,3.0
+New Hampshire,33,,3,,State Senate District 3,State Leg (Upper),-14.379898701225205,4.0
+New Hampshire,33,,4,,State Senate District 4,State Leg (Upper),7.830224350894882,18.0
+New Hampshire,33,,5,,State Senate District 5,State Leg (Upper),27.53101807263045,1.0
+New Hampshire,33,,6,,State Senate District 6,State Leg (Upper),-20.665714380626515,2.0
+New Hampshire,33,,7,,State Senate District 7,State Leg (Upper),-13.23211112905831,5.0
+New Hampshire,33,,8,,State Senate District 8,State Leg (Upper),-18.342015563701846,2.0
+New Hampshire,33,,9,,State Senate District 9,State Leg (Upper),-12.41229943261546,6.0
+New Hampshire,33,,10,,State Senate District 10,State Leg (Upper),17.578453769388,2.0
+New Hampshire,33,,11,,State Senate District 11,State Leg (Upper),-9.054871092858772,13.0
+New Hampshire,33,,12,,State Senate District 12,State Leg (Upper),-9.86465308448497,11.0
+New Hampshire,33,,13,,State Senate District 13,State Leg (Upper),6.708745936956687,25.0
+New Hampshire,33,,14,,State Senate District 14,State Leg (Upper),-20.842397872854725,1.0
+New Hampshire,33,,15,,State Senate District 15,State Leg (Upper),14.926793333128701,4.0
+New Hampshire,33,,16,,State Senate District 16,State Leg (Upper),-17.571944110298883,2.0
+New Hampshire,33,,17,,State Senate District 17,State Leg (Upper),-20.06341270083229,2.0
+New Hampshire,33,,18,,State Senate District 18,State Leg (Upper),-10.556701030927835,9.0
+New Hampshire,33,,19,,State Senate District 19,State Leg (Upper),-21.72742019404401,1.0
+New Hampshire,33,,20,,State Senate District 20,State Leg (Upper),1.7741731086047394,100.0
+New Hampshire,33,,21,,State Senate District 21,State Leg (Upper),25.19461934745277,1.0
+New Hampshire,33,,22,,State Senate District 22,State Leg (Upper),-25.66095085163732,1.0
+New Hampshire,33,,23,,State Senate District 23,State Leg (Upper),-23.710601719197708,1.0
+New Hampshire,33,,24,,State Senate District 24,State Leg (Upper),1.7846442435453196,100.0
+Pennsylvania,42,,1,,State Senate District 1,State Leg (Upper),63.215967939209406,0.0
+Pennsylvania,42,,2,,State Senate District 2,State Leg (Upper),59.39726308236379,0.0
+Pennsylvania,42,,3,,State Senate District 3,State Leg (Upper),88.14862580727106,0.0
+Pennsylvania,42,,4,,State Senate District 4,State Leg (Upper),71.71152028588577,0.0
+Pennsylvania,42,,5,,State Senate District 5,State Leg (Upper),14.855535928204503,3.0
+Pennsylvania,42,,6,,State Senate District 6,State Leg (Upper),2.865840707964602,0.0
+Pennsylvania,42,,7,,State Senate District 7,State Leg (Upper),74.3920130399348,0.0
+Pennsylvania,42,,8,,State Senate District 8,State Leg (Upper),73.93238353890158,0.0
+Pennsylvania,42,,9,,State Senate District 9,State Leg (Upper),15.932902580609879,3.0
+Pennsylvania,42,,10,,State Senate District 10,State Leg (Upper),14.398006398198618,0.0
+Pennsylvania,42,,11,,State Senate District 11,State Leg (Upper),11.621960288918999,6.0
+Pennsylvania,42,,12,,State Senate District 12,State Leg (Upper),18.253001690689743,0.0
+Pennsylvania,42,,13,,State Senate District 13,State Leg (Upper),-9.221717292513752,11.0
+Pennsylvania,42,,14,,State Senate District 14,State Leg (Upper),11.095002640295712,0.0
+Pennsylvania,42,,15,,State Senate District 15,State Leg (Upper),14.076988643701515,4.0
+Pennsylvania,42,,16,,State Senate District 16,State Leg (Upper),-7.433845695783245,0.0
+Pennsylvania,42,,17,,State Senate District 17,State Leg (Upper),39.79669767370817,0.0
+Pennsylvania,42,,18,,State Senate District 18,State Leg (Upper),9.571368042404904,0.0
+Pennsylvania,42,,19,,State Senate District 19,State Leg (Upper),17.08207345082785,2.0
+Pennsylvania,42,,20,,State Senate District 20,State Leg (Upper),-19.180506728088254,0.0
+Pennsylvania,42,,21,,State Senate District 21,State Leg (Upper),-33.97339092726797,0.0
+Pennsylvania,42,,22,,State Senate District 22,State Leg (Upper),16.60700211753758,0.0
+Pennsylvania,42,,23,,State Senate District 23,State Leg (Upper),-37.49723380336547,0.0
+Pennsylvania,42,,24,,State Senate District 24,State Leg (Upper),-0.3885929175806957,0.0
+Pennsylvania,42,,25,,State Senate District 25,State Leg (Upper),-21.732895285773886,1.0
+Pennsylvania,42,,26,,State Senate District 26,State Leg (Upper),21.015867141601518,0.0
+Pennsylvania,42,,27,,State Senate District 27,State Leg (Upper),-29.789447745256414,0.0
+Pennsylvania,42,,28,,State Senate District 28,State Leg (Upper),-27.668614350402276,0.0
+Pennsylvania,42,,29,,State Senate District 29,State Leg (Upper),-27.150951647557658,1.0
+Pennsylvania,42,,30,,State Senate District 30,State Leg (Upper),-45.318146257869834,0.0
+Pennsylvania,42,,31,,State Senate District 31,State Leg (Upper),-11.957266249766494,6.0
+Pennsylvania,42,,32,,State Senate District 32,State Leg (Upper),-36.81953565148742,0.0
+Pennsylvania,42,,33,,State Senate District 33,State Leg (Upper),-36.838820408800125,0.0
+Pennsylvania,42,,34,,State Senate District 34,State Leg (Upper),-22.071095872687284,0.0
+Pennsylvania,42,,35,,State Senate District 35,State Leg (Upper),-23.090016591731644,1.0
+Pennsylvania,42,,36,,State Senate District 36,State Leg (Upper),-17.320394110207204,0.0
+Pennsylvania,42,,37,,State Senate District 37,State Leg (Upper),0.49104119204482477,100.0
+Pennsylvania,42,,38,,State Senate District 38,State Leg (Upper),13.04071339814341,0.0
+Pennsylvania,42,,39,,State Senate District 39,State Leg (Upper),-21.00922687251236,1.0
+Pennsylvania,42,,40,,State Senate District 40,State Leg (Upper),3.6559527566154264,0.0
+Pennsylvania,42,,41,,State Senate District 41,State Leg (Upper),-28.857506051160602,0.0
+Pennsylvania,42,,42,,State Senate District 42,State Leg (Upper),36.772471750610414,0.0
+Pennsylvania,42,,43,,State Senate District 43,State Leg (Upper),57.541677902384095,0.0
+Pennsylvania,42,,44,,State Senate District 44,State Leg (Upper),9.037506331697802,0.0
+Pennsylvania,42,,45,,State Senate District 45,State Leg (Upper),15.034095331562295,3.0
+Pennsylvania,42,,46,,State Senate District 46,State Leg (Upper),-16.521599241359457,0.0
+Pennsylvania,42,,47,,State Senate District 47,State Leg (Upper),-12.45475785055241,5.0
+Pennsylvania,42,,48,,State Senate District 48,State Leg (Upper),-30.506640094833955,0.0
+Pennsylvania,42,,49,,State Senate District 49,State Leg (Upper),7.525648762824382,17.0
+Pennsylvania,42,,50,,State Senate District 50,State Leg (Upper),-23.212922272935508,0.0
+Wisconsin,55,,1,,State Senate District 1,State Leg (Upper),-18.56375236656927,0.0
+Wisconsin,55,,2,,State Senate District 2,State Leg (Upper),-24.474488707728035,1.0
+Wisconsin,55,,3,,State Senate District 3,State Leg (Upper),34.66147946013718,0.0
+Wisconsin,55,,4,,State Senate District 4,State Leg (Upper),66.49696366872578,0.0
+Wisconsin,55,,5,,State Senate District 5,State Leg (Upper),-6.786492822769712,0.0
+Wisconsin,55,,6,,State Senate District 6,State Leg (Upper),69.18313221058216,0.0
+Wisconsin,55,,7,,State Senate District 7,State Leg (Upper),25.451216035439373,0.0
+Wisconsin,55,,8,,State Senate District 8,State Leg (Upper),-10.197368421052632,10.0
+Wisconsin,55,,9,,State Senate District 9,State Leg (Upper),-14.949699850219952,0.0
+Wisconsin,55,,10,,State Senate District 10,State Leg (Upper),-13.362538451410582,5.0
+Wisconsin,55,,11,,State Senate District 11,State Leg (Upper),-25.23960152967282,0.0
+Wisconsin,55,,12,,State Senate District 12,State Leg (Upper),-23.268791471772,1.0
+Wisconsin,55,,13,,State Senate District 13,State Leg (Upper),-25.101130206673368,0.0
+Wisconsin,55,,14,,State Senate District 14,State Leg (Upper),8.8473151382393,13.0
+Wisconsin,55,,15,,State Senate District 15,State Leg (Upper),16.181524156054174,0.0
+Wisconsin,55,,16,,State Senate District 16,State Leg (Upper),28.676641858091994,1.0
+Wisconsin,55,,17,,State Senate District 17,State Leg (Upper),10.74304172020701,0.0
+Wisconsin,55,,18,,State Senate District 18,State Leg (Upper),6.534626280779262,25.0
+Wisconsin,55,,19,,State Senate District 19,State Leg (Upper),-24.14142538975501,0.0
+Wisconsin,55,,20,,State Senate District 20,State Leg (Upper),-35.70500649545318,0.0
+Wisconsin,55,,21,,State Senate District 21,State Leg (Upper),-1.622116650449316,0.0
+Wisconsin,55,,22,,State Senate District 22,State Leg (Upper),13.985682703442468,4.0
+Wisconsin,55,,23,,State Senate District 23,State Leg (Upper),-25.959054877660858,0.0
+Wisconsin,55,,24,,State Senate District 24,State Leg (Upper),-5.69240771509066,33.0
+Wisconsin,55,,25,,State Senate District 25,State Leg (Upper),-4.411394289116347,0.0
+Wisconsin,55,,26,,State Senate District 26,State Leg (Upper),67.96056128948133,0.0
+Wisconsin,55,,27,,State Senate District 27,State Leg (Upper),48.92043280785568,0.0
+Wisconsin,55,,28,,State Senate District 28,State Leg (Upper),-27.943618615577787,1.0
+Wisconsin,55,,29,,State Senate District 29,State Leg (Upper),-15.99459727785923,0.0
+Wisconsin,55,,30,,State Senate District 30,State Leg (Upper),1.5521234533147368,100.0
+Wisconsin,55,,31,,State Senate District 31,State Leg (Upper),6.239827014696623,0.0
+Wisconsin,55,,32,,State Senate District 32,State Leg (Upper),8.893884576205698,13.0
+Wisconsin,55,,33,,State Senate District 33,State Leg (Upper),-40.702923886733004,0.0
